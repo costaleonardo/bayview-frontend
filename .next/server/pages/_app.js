@@ -1,6 +1,1 @@
-const CHUNK_PUBLIC_PATH = "server/pages/_app.js";
-const runtime = require("../chunks/ssr/[turbopack]_runtime.js");
-runtime.loadChunk("server/chunks/ssr/node_modules_9c024f66._.js");
-runtime.loadChunk("server/chunks/ssr/[root of the server]__4f801237._.js");
-runtime.getOrInstantiateRuntimeModule("[project]/src/pages/_app.js [ssr] (ecmascript)", CHUNK_PUBLIC_PATH);
-module.exports = runtime.getOrInstantiateRuntimeModule("[project]/src/pages/_app.js [ssr] (ecmascript)", CHUNK_PUBLIC_PATH).exports;
+"use strict";(()=>{var e={};e.id=636,e.ids=[636],e.modules={143:e=>{e.exports=require("@apollo/client")},361:e=>{e.exports=require("next/dist/compiled/next-server/pages.runtime.prod.js")},2015:e=>{e.exports=require("react")},2326:e=>{e.exports=require("react-dom")},4075:e=>{e.exports=require("zlib")},7910:e=>{e.exports=require("stream")},8732:e=>{e.exports=require("react/jsx-runtime")},9021:e=>{e.exports=require("fs")},9478:e=>{e.exports=require("@faustwp/core")}};var r=require("../webpack-runtime.js");r.C(e);var s=e=>r(r.s=e),t=r.X(0,[89,124,178],()=>s(9178));module.exports=t})();
