@@ -1,0 +1,12 @@
+__turbopack_load_page_chunks__("/[...wordpressNode]", [
+  "static/chunks/node_modules_next_49c61137._.js",
+  "static/chunks/node_modules_react-dom_82bb97c6._.js",
+  "static/chunks/node_modules_@apollo_client_66b775da._.js",
+  "static/chunks/node_modules_graphql_931a79b8._.js",
+  "static/chunks/node_modules_lodash_27974347._.js",
+  "static/chunks/node_modules_@faustwp_core_dist_mjs_b4c811f9._.js",
+  "static/chunks/node_modules_f38bad49._.js",
+  "static/chunks/[root of the server]__86b27f54._.js",
+  "static/chunks/src_pages_[___wordpressNode]_5771e187._.js",
+  "static/chunks/src_pages_[___wordpressNode]_54bd79f1._.js"
+])

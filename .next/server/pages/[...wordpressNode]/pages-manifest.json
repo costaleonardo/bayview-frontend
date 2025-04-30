@@ -1,0 +1,3 @@
+{
+  "/[...wordpressNode]": "pages/[...wordpressNode].js"
+}
