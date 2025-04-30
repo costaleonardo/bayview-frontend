@@ -1,9 +1,7 @@
 {
-  "/_app": "pages/_app.js",
-  "/api/faust/[[...route]]": "pages/api/faust/[[...route]].js",
-  "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/preview": "pages/preview.js",
-  "/_error": "pages/_error.js",
-  "/[...wordpressNode]": "pages/[...wordpressNode].js"
+  "/[...wordpressNode]": "pages/[...wordpressNode].js",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js"
 }

@@ -1,22 +1,46 @@
 import { gql } from "@apollo/client";
-
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
 export default function SingleTemplate(props) {
-  const { title, content } = props.data.post;
+  const post = props.data?.post;
+
+  if (!post) {
+    return (
+      <div>
+        <Header />
+        <div className="py-12 text-center">
+          <div className="max-w-[1440px] mx-auto px-6">
+            <h1 className="text-[2.5rem] font-medium text-dark-blue font-serif mb-6">Post Not Found</h1>
+            <p className="text-dark-blue text-base font-serif text-justify">
+              The post you’re looking for doesn’t exist or has been removed.
+            </p>
+            <a
+              href="/blog"
+              className="mt-4 inline-block px-6 py-3 bg-dark-blue text-white rounded hover:bg-blue-900 transition-colors"
+            >
+              Back to Blog
+            </a>
+          </div>
+        </div>
+        <Footer />
+      </div>
+    );
+  }
+
+  const { title, content } = post;
 
   return (
     <div>
       <Header />
-      <article className="py-12 bg-gray-50">
+      <article className="py-12">
         <div className="max-w-[1440px] mx-auto px-6">
           {/* Post Title */}
-          <h1 className="text-4xl font-bold text-gray-800 mb-6 text-center">{title}</h1>
+          <h1 className="text-[2.5rem] font-medium text-dark-blue font-serif mb-6 text-center">{title}</h1>
 
           {/* Post Content */}
           <div
-            className="prose prose-lg prose-dark-blue max-w-none mx-auto"
+            className="post-content"
             dangerouslySetInnerHTML={{ __html: content }}
           />
         </div>
