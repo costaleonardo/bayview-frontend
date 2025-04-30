@@ -15,12 +15,6 @@ export default function SingleTemplate(props) {
             <p className="text-dark-blue text-base font-serif text-justify">
               The post you’re looking for doesn’t exist or has been removed.
             </p>
-            <a
-              href="/blog"
-              className="mt-4 inline-block px-6 py-3 bg-dark-blue text-white rounded hover:bg-blue-900 transition-colors"
-            >
-              Back to Blog
-            </a>
           </div>
         </div>
         <Footer />
